@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Asvin Thakur | Cosmic Portfolio",
-  description: "A future-facing portfolio for Asvin Thakur, blending business, technology, AI, and management.",
+  title: "Asvin Thakur | Portfolio",
+  description: "An editorial portfolio for Asvin Thakur, blending business, technology, AI, and management.",
 };
 
 export default function RootLayout({

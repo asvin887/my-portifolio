@@ -2,10 +2,10 @@ export const skills = ["Python", "C++", "Node.js", "SwiftUI", "AI Tools", "Commu
 
 export const projects = [
   {
-    title: "My Portfolio",
-    description: "A cosmic personal portfolio built to introduce Asvin, highlight skills, and present his digital identity.",
+    title: "Editorial Portfolio System",
+    description: "A monochrome personal portfolio built to introduce Asvin, highlight his business and technology direction, and present a clean digital identity.",
     githubUrl: "https://github.com/asvin887/my-portifolio",
-    tags: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Three.js", "GSAP"]
+    tags: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Shadcn UI"]
   }
 ];
 

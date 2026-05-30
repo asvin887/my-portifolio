@@ -1,13 +1,39 @@
 @import "tailwindcss";
 
 :root {
-  --background: #030713;
-  --foreground: #f8fbff;
+  --background: #f5f1e8;
+  --foreground: #111111;
+  --primary: #111111;
+  --primary-foreground: #f8f4ec;
+  --secondary: #e6dfd1;
+  --secondary-foreground: #111111;
+  --muted: #d8d0c0;
+  --muted-foreground: #5f5a50;
+  --accent: #d2c7b3;
+  --accent-foreground: #111111;
+  --destructive: #9f1d1d;
+  --destructive-foreground: #fff7ed;
+  --border: #201f1c;
+  --input: #201f1c;
+  --ring: #111111;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -15,7 +41,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -27,42 +53,14 @@ html {
 }
 
 ::selection {
-  background: rgba(103, 232, 249, 0.35);
-  color: #ffffff;
+  background: #111111;
+  color: #f5f1e8;
 }
 
-.hero-gradient {
-  background: linear-gradient(110deg, #ffffff 0%, #67e8f9 32%, #a78bfa 68%, #ffffff 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  filter: drop-shadow(0 0 28px rgba(34, 211, 238, 0.35));
-}
-
-.reveal-panel {
-  animation: reveal-panel 0.9s ease both;
-}
-
-.float-card {
-  animation: float-card 8s ease-in-out infinite;
-}
-
-@keyframes reveal-panel {
-  from {
-    opacity: 0;
-    transform: translateY(28px) scale(0.98);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-@keyframes float-card {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-12px);
-  }
+.editorial-grid {
+  background-image: linear-gradient(to right, rgba(17, 17, 17, 0.11) 1px, transparent 1px), linear-gradient(to bottom, rgba(17, 17, 17, 0.11) 1px, transparent 1px);
+  background-position: 0 0, 0 0;
+  background-size: 20px 20px;
+  mask-image: radial-gradient(ellipse 74% 62% at 50% 0%, #000 58%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 74% 62% at 50% 0%, #000 58%, transparent 100%);
 }
