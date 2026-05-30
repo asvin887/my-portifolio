@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #030713;
+  --foreground: #f8fbff;
 }
 
 @theme inline {
@@ -16,4 +16,53 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: rgba(103, 232, 249, 0.35);
+  color: #ffffff;
+}
+
+.hero-gradient {
+  background: linear-gradient(110deg, #ffffff 0%, #67e8f9 32%, #a78bfa 68%, #ffffff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 28px rgba(34, 211, 238, 0.35));
+}
+
+.reveal-panel {
+  animation: reveal-panel 0.9s ease both;
+}
+
+.float-card {
+  animation: float-card 8s ease-in-out infinite;
+}
+
+@keyframes reveal-panel {
+  from {
+    opacity: 0;
+    transform: translateY(28px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes float-card {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
 }
