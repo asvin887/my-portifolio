@@ -14,8 +14,8 @@ export function HeroSection04() {
           <h1 className="relative z-20 text-center text-6xl font-bold tracking-[-6px] text-primary sm:text-7xl md:text-9xl md:tracking-[-14px] xl:text-[10rem] xl:tracking-[-1rem]">
             CREATIVE LEADER
           </h1>
-          <p className="absolute -bottom-12 right-24 hidden text-4xl font-thin tracking-[6px] xl:block">ASVIN THAKUR</p>
-          <p className="absolute -bottom-12 left-4 text-3xl font-thin tracking-[6px] sm:left-24 sm:text-4xl xl:hidden">ASVIN THAKUR</p>
+          <p className="absolute -bottom-16 right-4 z-40 hidden border border-primary bg-background/95 px-5 py-2 text-4xl font-normal tracking-[6px] xl:block">ASVIN THAKUR</p>
+          <p className="absolute -bottom-16 left-4 z-40 border border-primary bg-background/95 px-4 py-2 text-2xl font-normal tracking-[4px] sm:left-24 sm:text-4xl sm:tracking-[6px] xl:hidden">ASVIN THAKUR</p>
         </div>
 
         <div className="relative grid">
